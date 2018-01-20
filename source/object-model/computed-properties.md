@@ -110,7 +110,7 @@ and use the existing `fullName` property and add in some other properties:
 ```javascript
 import EmberObject, { computed } from '@ember/object';
 
-Person = EmberObject.extend({
+let Person = EmberObject.extend({
   firstName: null,
   lastName: null,
   age: null,
@@ -159,7 +159,7 @@ You must return the new intended value of the computed property from the setter 
 ```javascript
 import EmberObject, { computed } from '@ember/object';
 
-Person = EmberObject.extend({
+let Person = EmberObject.extend({
   firstName: null,
   lastName: null,
 
@@ -194,7 +194,7 @@ In this example, the two computed properties are equivalent:
 import EmberObject, { computed } from '@ember/object';
 import { equal } from '@ember/object/computed';
 
-Person = EmberObject.extend({
+let Person = EmberObject.extend({
   fullName: 'Tony Stark',
 
   isIronManLongWay: computed('fullName', function() {
