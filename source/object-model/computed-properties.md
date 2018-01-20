@@ -14,7 +14,7 @@ We have a `Person` object with `firstName` and `lastName` properties, but we als
 ```javascript
 import EmberObject, { computed } from '@ember/object';
 
-Person = EmberObject.extend({
+let Person = EmberObject.extend({
   // these will be supplied by `create`
   firstName: null,
   lastName: null,
